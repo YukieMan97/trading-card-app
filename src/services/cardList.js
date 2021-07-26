@@ -1,16 +1,16 @@
 // use with MongoDB
 export function getCardList() {
-    return fetch('http://localhost:3000/')
+    return fetch('https://trading-card-app-heroku.herokuapp.com/')
     .then(data => data.json())
 }
 
 export function getCurrentCard(id) {
-    return fetch(`http://localhost:3000/${id}`)
+    return fetch(`https://trading-card-app-heroku.herokuapp.com/${id}`)
     .then(data => data.json())
 }
 
 export function addCard(name, url, description) {
-    return fetch('http://localhost:3000/', {
+    return fetch('https://trading-card-app-heroku.herokuapp.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ export function addCard(name, url, description) {
 }
 
 export function updateCardName(name, id) {
-    return fetch(`http://localhost:3000/${id}`, {
+    return fetch(`https://trading-card-app-heroku.herokuapp.com/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ export function updateCardName(name, id) {
 }
 
 export function deleteCard(id) {
-    return fetch(`http://localhost:3000/delete/${id}`, {
+    return fetch(`https://trading-card-app-heroku.herokuapp.com/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
