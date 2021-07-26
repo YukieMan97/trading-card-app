@@ -1,0 +1,67 @@
+.Text {
+  text-align: center;
+  font-family: "Lucida Sans Unicode", serif;
+}
+
+.delete-btn {
+  background-color: brown;
+  font-size: 10px;
+  margin-left: 70%;
+}
+
+.update-name-row {
+  display: flex;
+  justify-content: center;
+}
+
+.update-name-btn {
+  background-color:lavenderblush;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.update-name-label {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto;
+  background-color: transparent;
+  padding: 10px;
+}
+
+
+.grid-item {
+  background-color: mintcream;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 75%;
+}
+
+.grid-item text {
+  font-size: 20px;
+}
+
+.grid-item p {
+  font-size: 15px;
+}
+
+.wrapper {
+  padding: 15px;
+}
