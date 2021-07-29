@@ -82,7 +82,7 @@ function AddCardFormsNew() {
                     type="text"
                     onChange={event => setDesInput(event.target.value)} value={desInput} />
             </label>
-            <button type="submit">Add Card</button>
+            <button type="submit">Add New Card</button>
         </form>
         <div className="grid-container3">
             {list.length === 0
